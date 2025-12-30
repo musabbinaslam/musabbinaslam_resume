@@ -28,8 +28,6 @@ const HeroSection = () => {
         <div className="animate-fade-in">
           <p className="text-primary font-mono text-sm md:text-base mb-4 tracking-wider">&lt;hello world /&gt;</p>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">Junior Software Developer</p>
-
           <p className="text-muted-foreground max-w-2xl mx-auto mb-10 text-base md:text-lg">
             Crafting clean, modern web experiences with a passion for frontend development and user-centric design.
           </p>
