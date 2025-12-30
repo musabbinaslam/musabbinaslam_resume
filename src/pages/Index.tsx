@@ -9,10 +9,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Musab bin Aslam | Junior Software Developer</title>
+        <title>Musab bin Aslam | Software Engineer</title>
         <meta 
           name="description" 
-          content="Portfolio of Musab bin Aslam, a junior software developer specializing in frontend development with React, TypeScript, and modern web technologies." 
+          content="Portfolio of Musab bin Aslam, a Software Engineer specializing in React Native, React.js, blockchain integration, and building responsive, user-focused applications." 
         />
       </Helmet>
       

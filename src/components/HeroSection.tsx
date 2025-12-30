@@ -29,26 +29,26 @@ const HeroSection = () => {
           </p>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            I'm{' '}
+            Hi, I'm{' '}
             <span className="text-gradient">Musab bin Aslam</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Junior Software Developer
-          </p>
-          
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-10 text-base md:text-lg">
-            Crafting clean, modern web experiences with a passion for frontend development and user-centric design.
+          <h2 className="text-xl md:text-2xl text-muted-foreground mb-6 font-light">
+            Software Engineer
+          </h2>
+
+          <p className="text-muted-foreground/80 max-w-lg mx-auto mb-8 text-base md:text-lg">
+            React Native, React.js & Blockchain developer crafting responsive, user-focused applications with clean, maintainable code.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pointer-events-auto">
             <Button 
               size="lg" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary transition-all duration-300"
-              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Explore More
-              <ArrowDown className="ml-2 w-4 h-4" />
+              <Mail className="w-4 h-4 mr-2" />
+              Get In Touch
             </Button>
             
             <div className="flex gap-4">
@@ -56,11 +56,11 @@ const HeroSection = () => {
                  className="p-3 rounded-full border border-border bg-background/80 backdrop-blur-sm hover:border-primary hover:text-primary transition-all duration-300">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://linkedin.com/in/musab-bin-aslam-a12915271" target="_blank" rel="noopener noreferrer"
                  className="p-3 rounded-full border border-border bg-background/80 backdrop-blur-sm hover:border-primary hover:text-primary transition-all duration-300">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="mailto:musab@example.com"
+              <a href="mailto:musabbinaslam6@gmail.com"
                  className="p-3 rounded-full border border-border bg-background/80 backdrop-blur-sm hover:border-primary hover:text-primary transition-all duration-300">
                 <Mail className="w-5 h-5" />
               </a>
