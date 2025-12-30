@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { useDocumentHead } from '@/hooks/use-document-head';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -6,26 +6,21 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  useDocumentHead({
+    title: 'Musab bin Aslam | Software Engineer',
+    description: 'Portfolio of Musab bin Aslam, a Software Engineer specializing in React Native, React.js, blockchain integration, and building responsive, user-focused applications.',
+  });
+
   return (
-    <>
-      <Helmet>
-        <title>Musab bin Aslam | Software Engineer</title>
-        <meta 
-          name="description" 
-          content="Portfolio of Musab bin Aslam, a Software Engineer specializing in React Native, React.js, blockchain integration, and building responsive, user-focused applications." 
-        />
-      </Helmet>
-      
-      <div className="min-h-screen bg-background">
-        <Navbar />
-        <main>
-          <HeroSection />
-          <AboutSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
