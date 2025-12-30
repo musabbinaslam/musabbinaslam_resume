@@ -8,7 +8,7 @@ const Footer = () => {
           &copy; {currentYear} Musab bin Aslam. All rights reserved.
         </p>
         <p className="text-muted-foreground text-sm">
-          Built with <span className="text-primary">♥</span> and React
+          Built with <span className="text-primary"></span> and React
         </p>
       </div>
     </footer>
