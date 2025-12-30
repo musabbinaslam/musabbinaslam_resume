@@ -7,8 +7,8 @@ const Spline = lazy(() => import('@splinetool/react-spline'));
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0">
+      {/* Spline 3D Background - Interactive */}
+      <div className="absolute inset-0 z-10">
         <Suspense fallback={
           <div className="w-full h-full bg-background flex items-center justify-center">
             <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin" />
@@ -18,11 +18,11 @@ const HeroSection = () => {
         </Suspense>
       </div>
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
+      {/* Gradient Overlay - pointer-events-none so Spline stays interactive */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background z-20 pointer-events-none" />
 
-      {/* Content */}
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
+      {/* Content - positioned at bottom to not block Spline interaction */}
+      <div className="absolute bottom-0 left-0 right-0 z-30 text-center px-6 pb-24 max-w-4xl mx-auto pointer-events-none">
         <div className="animate-fade-in">
           <p className="text-primary font-mono text-sm md:text-base mb-4 tracking-wider">
             &lt;hello world /&gt;
@@ -41,7 +41,7 @@ const HeroSection = () => {
             Crafting clean, modern web experiences with a passion for frontend development and user-centric design.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pointer-events-auto">
             <Button 
               size="lg" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary transition-all duration-300"
@@ -53,15 +53,15 @@ const HeroSection = () => {
             
             <div className="flex gap-4">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
-                 className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300">
+                 className="p-3 rounded-full border border-border bg-background/80 backdrop-blur-sm hover:border-primary hover:text-primary transition-all duration-300">
                 <Github className="w-5 h-5" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                 className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300">
+                 className="p-3 rounded-full border border-border bg-background/80 backdrop-blur-sm hover:border-primary hover:text-primary transition-all duration-300">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="mailto:musab@example.com"
-                 className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300">
+                 className="p-3 rounded-full border border-border bg-background/80 backdrop-blur-sm hover:border-primary hover:text-primary transition-all duration-300">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
