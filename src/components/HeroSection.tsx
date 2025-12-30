@@ -28,7 +28,9 @@ const HeroSection = () => {
         <div className="animate-fade-in">
           <p className="text-primary font-mono text-sm md:text-base mb-4 tracking-wider">&lt;hello world /&gt;</p>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">Junior Software Developer</p>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            I'm <span className="text-gradient">Musab bin Aslam</span>
+          </h1>
 
           <p className="text-muted-foreground max-w-2xl mx-auto mb-10 text-base md:text-lg">
             Crafting clean, modern web experiences with a passion for frontend development and user-centric design.
