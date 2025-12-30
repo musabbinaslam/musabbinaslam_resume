@@ -10,7 +10,7 @@ const socialLinks = [
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    href: 'https://linkedin.com',
+    href: 'https://linkedin.com/in/musab-bin-aslam-a12915271',
     color: 'hover:text-[hsl(201,100%,50%)]',
   },
   {
@@ -22,7 +22,7 @@ const socialLinks = [
   {
     name: 'Email',
     icon: Mail,
-    href: 'mailto:musab@example.com',
+    href: 'mailto:musabbinaslam6@gmail.com',
     color: 'hover:text-primary',
   },
 ];
@@ -62,10 +62,10 @@ const ContactSection = () => {
 
         {/* Email CTA */}
         <a 
-          href="mailto:musab@example.com"
+          href="mailto:musabbinaslam6@gmail.com"
           className="inline-flex items-center gap-2 text-lg font-mono text-primary hover:underline underline-offset-4"
         >
-          musab@example.com
+          musabbinaslam6@gmail.com
         </a>
       </div>
     </section>

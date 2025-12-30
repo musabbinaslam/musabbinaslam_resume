@@ -1,34 +1,36 @@
-import { Code2, Palette, Terminal, Zap } from 'lucide-react';
+import { Code2, Smartphone, Link, Zap } from 'lucide-react';
 
 const skills = [
-  { name: 'React', level: 85 },
-  { name: 'TypeScript', level: 75 },
-  { name: 'JavaScript', level: 90 },
-  { name: 'HTML/CSS', level: 95 },
+  { name: 'React.js', level: 90 },
+  { name: 'React Native', level: 85 },
+  { name: 'JavaScript (ES6+)', level: 90 },
   { name: 'Tailwind CSS', level: 85 },
-  { name: 'Git', level: 80 },
+  { name: 'Node.js / Express', level: 75 },
+  { name: 'Solidity / Web3', level: 70 },
+  { name: 'Firebase', level: 80 },
+  { name: 'Python / NLP', level: 65 },
 ];
 
 const highlights = [
   {
     icon: Code2,
     title: 'Clean Code',
-    description: 'Writing maintainable, readable code that scales.',
+    description: 'Writing maintainable, scalable code in agile teams.',
   },
   {
-    icon: Palette,
-    title: 'UI/UX Focus',
-    description: 'Creating intuitive and visually appealing interfaces.',
+    icon: Smartphone,
+    title: 'Mobile & Web',
+    description: 'Building responsive apps with React & React Native.',
   },
   {
-    icon: Terminal,
-    title: 'Modern Stack',
-    description: 'Building with cutting-edge frontend technologies.',
+    icon: Link,
+    title: 'Blockchain',
+    description: 'Smart contracts & Web3 integration with Solidity.',
   },
   {
     icon: Zap,
-    title: 'Performance',
-    description: 'Optimizing for speed and smooth user experiences.',
+    title: 'Automation',
+    description: 'NLP-powered tools & workflow automation.',
   },
 ];
 
@@ -46,9 +48,9 @@ const AboutSection = () => {
             Passionate About <span className="text-gradient">Frontend</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            I'm a junior software developer focused on creating beautiful, 
-            responsive web applications. I love turning ideas into reality 
-            through code and am constantly learning new technologies.
+            Motivated Software Engineer with hands-on experience in React Native, React.js, and blockchain integration. 
+            Passionate about crafting responsive, user-focused applications and automating workflows.
+            BS Software Engineering from CUST, Islamabad with Dean's Honor Award.
           </p>
         </div>
 
