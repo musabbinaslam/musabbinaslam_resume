@@ -17,10 +17,10 @@ const projects = [
   },
   {
     icon: LayoutDashboard,
-    title: 'Pharmacy & Lab Dashboard',
-    year: '2024',
-    description: 'Full-stack MERN application featuring real-time inventory tracking, analytics dashboards, and role-based access control for healthcare facilities.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express'],
+    title: 'CleanFlow POS System',
+    year: '2026',
+    description: 'Offline desktop Point of Sale system for small businesses featuring customer management, job tracking, payment processing, expense management, and double-entry bookkeeping with role-based access control.',
+    tags: ['Desktop App', 'POS', 'Offline-First', 'Windows'],
   },
   {
     icon: Blocks,
