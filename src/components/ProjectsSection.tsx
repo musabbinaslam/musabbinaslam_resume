@@ -1,4 +1,4 @@
-import { ExternalLink, Blocks, Gamepad2, Calendar as CalendarIcon, Brain } from 'lucide-react';
+import { ExternalLink, Blocks, Gamepad2, LayoutDashboard, Brain } from 'lucide-react';
 
 const projects = [
   {
@@ -16,11 +16,11 @@ const projects = [
     tags: ['React', 'Solidity', 'Ethereum', 'Web3.js'],
   },
   {
-    icon: CalendarIcon,
-    title: 'Wedding Planning App',
-    year: '2023',
-    description: 'Comprehensive React Native app for managing event timelines, guest lists, and budgeting with a user-friendly mobile interface.',
-    tags: ['React Native', 'Firebase', 'Mobile'],
+    icon: LayoutDashboard,
+    title: 'Pharmacy & Lab Dashboard',
+    year: '2024',
+    description: 'Full-stack MERN application featuring real-time inventory tracking, analytics dashboards, and role-based access control for healthcare facilities.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express'],
   },
   {
     icon: Blocks,
